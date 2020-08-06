@@ -93,8 +93,7 @@ header {
 
 header > h1 {
     margin: 0;
-    padding: 1%;
-    padding-bottom: .5%;
+    padding: 1% 1% .5% 1%;
 
     font-size: 2em;
     font-weight: 600;
@@ -106,8 +105,7 @@ header > h1 {
 }
 header > h2 {
     margin: 0;
-    padding: 1%;
-    padding-top: .5%;
+    padding: .5% 1% 1% 1%;
 
     font-size: 1em;
     font-weight: 500;
@@ -147,36 +145,75 @@ header > h2 {
 /**********/
 
 #left {
-    font-size: calc( .017 * var(--width) );
+    font-size: calc( .015 * var(--width) );
     width: var(--split);
 }
 #left > h1 {
     font-size: 1.6em;
-    margin: 4%;
+    margin: .5em;
     border-bottom: 1px solid #0000003f;
 }
 
-#left > .date {
-    left: 3%;
+.date {
     font-size: .9em;
-    position: absolute;
     font-style: italic;
 }
+#left > .date {
+    position: absolute;
+    left: 3%;
+}
 #left > h2 {
-    margin: 4%;
-    margin-bottom: 2%;
-    margin-left: 25%;
+    margin: 0 0 0 28%;
+    text-indent: -3%;
+
     font-size: 1.25em;
 }
 #left > ul {
-    margin: 4%;
-    margin-top: 2%;
-    margin-left: 23%;
+    margin: .2em 0 .4em 23%;
     
     font-size: 1em;
-    line-height: 130%;
+    line-height: 125%;
 
     list-style-type: circle;
+}
+#left > ul > li {
+
+    text-indent: -1.5%;
+}
+
+
+
+
+
+#classes {
+    margin: 0 0 0 8.5%;
+    display: flex;
+    font-style: italic;
+}
+#classes > div {
+    margin: 0 1.5% 0 1.5%;
+
+    font-size: .95em;
+}
+
+
+
+
+#website_plug {
+    margin: 0 2em .9em 2em;
+}
+.link { color: #5db1d8; }
+.project {
+    display: block;
+    margin: .35em 0 .35em 25%;
+}
+.project > h1 {
+    display: inline;
+    position: relative;
+
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
 }
 
 /*----------------------------------------------------------------------------*/

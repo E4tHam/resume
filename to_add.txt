@@ -52,11 +52,17 @@ Skills
  · Practiced in many Google APIs
 
 
-Experience
+Engineering Experience
 UCSB Undergraduate Algorithms Researcher
-Website Developer for musician Rafa Rodriguez rafarodriguezmusic.com
-UCSB MRL Educational Outreach Representative
 UCSB IEEE Project Lead
+UCSB MRL Educational Outreach Representative
+Website Developer for musician Rafa Rodriguez rafarodriguezmusic.com
+
+Leadership/Team Collaboration Experience
+UCSB IEEE Hackathon Lead
+UCSB Residence Hall Desk Attendant
+Eagle Scout
+
 
 Projects Worked on
 (you can learn more on my website, ethan.sifferman.dev)
