@@ -1,0 +1,69 @@
+Education
+University of California; Santa Barbara
+GPA: 3.70 | Objective: Bachelor of Science in Computer Engineering
+Graduating June 2022
+Relevant Coursework:
+ · Analog and Digital Circuits & Systems
+ · Data Structures and Algorithms
+ · Computer Communication Networks
+ · Object Oriented Design
+ · Artificial Inteligence
+ · Machine Learning
+ · Operating Systems
+
+Leadership
+ · Eagle
+ · BIPS
+ · UCSB IEEE Hackathon Coordinator
+
+Languages
+ · C/C++      ·····
+ · Java       ····
+ · Python     ···
+ · HTML, CSS  ·····
+ · Javascript ····
+ · Verilog    ·····
+ · Spice      ····
+
+Software Experience
+ · Git
+ · Wireshark
+ · LTSpice
+ · Logisim
+ · Solidworks
+ · Adobe Illustrator
+ · Adobe Priemere Pro
+ · Windows 10
+ · MacOS
+ · Linux
+
+Skills
+ Social:
+ · Proficient in Teamwork, Leadership, Presentation, and Public Speaking
+ · Capable of presenting technical concepts in an accessible manner
+ Software:
+ · Experienced in Website Construction and Hosting
+ · App development
+ · Object oriented design
+ · Memory mangagement
+ Hardware:
+ · Proficient in Analog Circuit and Digital System Design, Soldering
+ · Trained in PCB Design, CAD Design, 3D Printing
+ · Practiced in many Google APIs
+
+
+Experience
+UCSB Undergraduate Algorithms Researcher
+Website Developer for musician Rafa Rodriguez rafarodriguezmusic.com
+UCSB MRL Educational Outreach Representative
+UCSB IEEE Project Lead
+
+Projects Worked on
+(you can learn more on my website, ethan.sifferman.dev)
+ · Polynomial Max-Cut Algorithm
+ · Personal Website with Interactivity
+ · Alarm Clock Android App
+ · RC Car with Video Streaming
+ · Website for Musician Rafa Rodriguez
+ · Water Balloon Launcher
+ · High-Weight Bearing Wooden Shelves
