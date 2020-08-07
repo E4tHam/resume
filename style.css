@@ -9,6 +9,9 @@
     --header-height : calc( .1*var(--height) );
     --flex-height   : calc( var(--height) - var(--header-height) );
     --split  : calc( var(--width) * .61803399 );
+
+    --empty : url("media/empty.svg");
+    --filled : url("media/filled.svg");
 }
 
 /*--------------------------------------*/
@@ -137,6 +140,8 @@ header > h2 {
     height: var(--flex-height);
 }
 
+.link { color: #175d7ebe; }
+
 /*----------------------------------------------------------------------------*/
 
 
@@ -202,7 +207,6 @@ header > h2 {
 #website_plug {
     margin: 0 2em .9em 2em;
 }
-.link { color: #5db1d8; }
 .project {
     display: block;
     margin: .35em 0 .35em 25%;
@@ -224,8 +228,75 @@ header > h2 {
 /***********/
 
 #right {
+    width: calc( var(--width) - var(--split) );
     background-color: #eeeeea;
     background-image: linear-gradient(to bottom right, #e1e4e1, #eeeeea, #e1e4e1);
 
-    width: calc( var(--width) - var(--split) );
+    font-size: calc( .018 * var(--width) );
 }
+
+#right > h1 {
+    font-size: 1.9em;
+    margin: 1em 0 .5em .5em;
+    text-align: center;
+
+    border-bottom: 1px solid #0000002a;
+}
+#right > h2 {
+    font-size: 1.5em;
+    margin: .5em;
+}
+
+.contact {
+    display: block;
+    width: fit-content;
+    margin: 2% 0 2% 2em;
+
+    font-size: 1em;
+}
+.contact > img {
+    height: 1.3em;
+    transform: translate(0, 22.5%);
+}
+
+div[class^='skill_'] {
+    position: relative;
+    margin: 2% 0 2% 2em;
+}
+
+div[class^='skill_'] > div[class^='score_'] {
+    position: absolute;
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    transform: translate(0,-50%);
+
+    background-image: url("media/filled.svg");
+    background-size: .95em .95em;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+div[class^='skill_'] > .score_1 { right: 7.50em; }
+div[class^='skill_'] > .score_2 { right: 6.25em; }
+div[class^='skill_'] > .score_3 { right: 5.00em; }
+div[class^='skill_'] > .score_4 { right: 3.75em; }
+div[class^='skill_'] > .score_5 { right: 2.50em; }
+
+.skill_1 > .score_5 ,
+.skill_2 > .score_5 ,
+.skill_3 > .score_5 ,
+div.skill_4 > div.score_5 { background-image: url("media/empty.svg") !important; }
+
+.skill_1 > .score_4 ,
+.skill_2 > .score_4 ,
+.skill_3 > .score_4 { background-image: url("media/empty.svg") !important; }
+
+.skill_1 > .score_3 ,
+.skill_2 > .score_3 { background-image: url("media/empty.svg") !important; }
+
+.skill_1 > .score_2 ,
+.skill_2 > .score_2 { background-image: url("media/empty.svg") !important; }
