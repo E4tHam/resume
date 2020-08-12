@@ -9,12 +9,12 @@
 
 :root {
     /* Letter */
-    /* --width  : min( 77.274vh, 100vw );
-    --height : min( 100vh, 129.41vw ); */
+    --width  : min( 77.274vh, 100vw );
+    --height : min( 100vh, 129.41vw );
 
     /* A4 */
-    --width  : min( 70.711vh, 100vw );
-    --height : min( 100vh, 141.421vw );
+    /* --width  : min( 77.274vh, 100vw );
+    --height : min( 100vh, 129.41vw ); */
 }
 
 html {
@@ -56,7 +56,7 @@ a {
 }
 
 #_MAIN_ {
-    --header-height : calc( .12*var(--height) );
+    --header-height : calc( .1*var(--height) );
     --flex-height   : calc( var(--height) - var(--header-height) );
     --split  : calc( var(--width) * .61803399 );
 }
@@ -79,8 +79,8 @@ header {
     width: 100%;
     height: var(--header-height);
 
-    background-color: #e0ddde;
-    background-image: linear-gradient(to top right, #dad5e6, #a5979e);
+    background-color: #dde0dd;
+    background-image: linear-gradient(to top right, #dde0dd, #97a38e);
     white-space: nowrap;
 
     font-size: calc( .03 * var(--width) );
@@ -94,7 +94,7 @@ header {
 
 header > h1 {
     margin: 0;
-    padding: 2.5% 1% .5% 1%;
+    padding: 1% 1% .5% 1%;
 
     font-size: 2em;
     font-weight: 600;
@@ -166,17 +166,15 @@ header > h2 {
 
 /* Item */
 .date {
-    display: inline;
     font-size: .9em;
     font-style: italic;
 }
 #left > .date {
-    transform: translate(0,10%);
     position: absolute;
     left: 3%;
 }
 #left > h2 {
-    margin: 2% 0 1% 28%;
+    margin: 0 0 0 28%;
     text-indent: -3%;
 
     font-size: 1.25em;
@@ -191,7 +189,6 @@ header > h2 {
 }
 #left > ul > li {
     text-indent: -1.5%;
-    margin: .5% 0 .5% 0;
 }
 
 
@@ -204,7 +201,6 @@ header > h2 {
 #classes > div {
     margin: 0 1.5% 0 1.5%;
 
-    line-height: 1.3em;
     font-size: .95em;
 }
 
@@ -217,19 +213,19 @@ header > h2 {
 .project_skill {
     font-size: .9em;
     left: 60%;
-    transform: translate(-100%, -100%);
+    transform: translate(-100%, 0);
     position: absolute;
 }
 .project {
     display: block;
-    margin: .35em 3% .35em 4.5%;
+    margin: .35em 0 .35em 25%;
 }
 .project > h1 {
     display: inline;
     position: relative;
 
     padding: 0;
-    margin-left: 3.5em;
+    margin: 0;
     font-size: 1em;
 }
 
@@ -248,15 +244,15 @@ header > h2 {
 #right {
     width: calc( var(--width) - var(--split) );
 
-    background-color: #eaeaee;
-    background-image: linear-gradient(to bottom right, #e3e1e4, #eaeaee, #e3e1e4);
+    background-color: #eeeeea;
+    background-image: linear-gradient(to bottom right, #e1e4e1, #eeeeea, #e1e4e1);
     font-size: calc( .018 * var(--width) );
 }
 
 /* Section */
 #right > h1 {
-    font-size: 2.1em;
-    margin: 1.1em 0 .5em .5em;
+    font-size: 1.9em;
+    margin: 1em 0 .5em .5em;
     text-align: center;
 
     border-bottom: 1px solid #0000002a;
@@ -274,7 +270,7 @@ header > h2 {
     width: fit-content;
     margin: 2% 0 2% 2em;
 
-    font-size: 1.1em;
+    font-size: 1em;
 }
 .contact > img {
     height: 1.3em;
@@ -285,7 +281,7 @@ header > h2 {
 /* Skills */
 div[class^='skill_'] {
     position: relative;
-    margin: 3% 0 3% 2em;
+    margin: 2% 0 2% 2em;
 }
 
 div[class^='skill_'] > div[class^='score_'] {
@@ -327,14 +323,3 @@ div[class^='skill_'] > .score_5 { right: 2.50em; }
 
 
 /*----------------------------------------------------------------------------*/
-
-#css_brag {
-    display: block;
-    position: absolute;
-    transform: translate(0, -100%);
-    bottom: 0;
-    right: 1em;
-
-    font-style: italic;
-    font-size: .8em;
-}
