@@ -304,11 +304,11 @@ div[class^='skill_'] > div[class^='score_'] {
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
-div[class^='skill_'] > .score_1 { right: 7.50em; }
-div[class^='skill_'] > .score_2 { right: 6.25em; }
-div[class^='skill_'] > .score_3 { right: 5.00em; }
-div[class^='skill_'] > .score_4 { right: 3.75em; }
-div[class^='skill_'] > .score_5 { right: 2.50em; }
+div[class^='skill_'] > .score_1 { right: 7.25em; }
+div[class^='skill_'] > .score_2 { right: 6.00em; }
+div[class^='skill_'] > .score_3 { right: 4.75em; }
+div[class^='skill_'] > .score_4 { right: 3.50em; }
+div[class^='skill_'] > .score_5 { right: 2.25em; }
 
 .skill_1 > .score_5 ,
 .skill_2 > .score_5 ,
