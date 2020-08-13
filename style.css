@@ -214,11 +214,15 @@ header > h2 {
 #website_plug {
     margin: 0 2em .9em 2em;
 }
+.project > .date ,
 .project_skill {
-    font-size: .9em;
-    left: 60%;
-    transform: translate(-100%, -100%);
     position: absolute;
+    font-size: .9em;
+    transform: translate(0, 9%);
+}
+.project_skill {
+    left: 60%;
+    transform: translate(-100%, -94%);
 }
 .project {
     display: block;
@@ -229,7 +233,7 @@ header > h2 {
     position: relative;
 
     padding: 0;
-    margin-left: 3.5em;
+    margin-left: 7.5em;
     font-size: 1em;
 }
 
@@ -332,7 +336,7 @@ div[class^='skill_'] > .score_5 { right: 2.25em; }
     display: block;
     position: absolute;
     transform: translate(0, -100%);
-    bottom: 0;
+    bottom: -.5%;
     right: 1em;
 
     font-style: italic;
