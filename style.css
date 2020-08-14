@@ -303,7 +303,7 @@ div[class^='skill_'] > div[class^='score_'] {
     top: 50%;
     transform: translate(0,-50%);
 
-    background-image: var(--filled);
+    background-image: url("media/filled.svg");
     background-size: .95em .95em;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -327,7 +327,7 @@ div[class^='skill_'] > .score_5 { right: 2.25em; }
 .skill_2 > .score_3 ,
 
 .skill_1 > .score_2 ,
-.skill_2 > .score_2 { background-image: var(--empty) !important; }
+.skill_2 > .score_2 { background-image: url("media/empty.svg") !important; }
 
 
 /*----------------------------------------------------------------------------*/
