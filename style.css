@@ -212,7 +212,7 @@ header > h2 {
 
 /* Projects */
 #website_plug {
-    display: block;
+    display: inline-block;
     margin: 0 2em .9em 2em;
 }
 .project > .date ,
