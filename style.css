@@ -189,7 +189,7 @@ header > h2 {
 
     list-style-type: circle;
 }
-#left > ul > li {
+#left li {
     text-indent: -1.5%;
     margin: .5% 0 .5% 0;
 }
