@@ -9,12 +9,12 @@
 
 :root {
     /* Letter */
-    /* --width  : min( 77.274vh, 100vw );
-    --height : min( 100vh, 129.41vw ); */
+    --width  : min( 77.274vh, 100vw );
+    --height : min( 100vh, 129.41vw );
 
     /* A4 */
-    --width  : min( 70.711vh, 100vw );
-    --height : min( 100vh, 141.421vw );
+    /* --width  : min( 70.711vh, 100vw );
+    --height : min( 100vh, 141.421vw ); */
 }
 
 html {
@@ -39,7 +39,7 @@ body {
 }
 #_MAIN_:hover {
     transition: box-shadow .3s;
-    box-shadow: 2px 2px 8px #000000b3;
+    box-shadow: 2px 2px 30px 2px #00000046;
 }
 
 /*--------------------------------------*/
@@ -86,10 +86,11 @@ header {
     font-size: calc( .03 * var(--width) );
 
     box-shadow:
-    0
-    calc(.002*var(--width))
-    calc(.008*var(--width))
-    #00000054                 ;
+        0
+        calc(.002*var(--width))
+        calc(.008*var(--width))
+        #00000054
+    ;
 }
 
 header > h1 {
@@ -102,7 +103,8 @@ header > h1 {
         calc(.003*var(--width))
         calc(.003*var(--width))
         calc(.009*var(--width))
-        #0000004d        ;
+        #0000004d
+    ;
 }
 header > h2 {
     margin: 0;
@@ -154,7 +156,17 @@ header > h2 {
 
 #left {
     width: var(--split);
-    font-size: calc( .015 * var(--width) );
+    font-size: calc( .0148 * var(--width) );
+}
+.date {
+    display: inline;
+    
+    font-size: .9em;
+    font-style: italic;
+    text-align: center;
+
+    width: 10em;
+    margin: .3em;
 }
 
 /* Section */
@@ -163,36 +175,39 @@ header > h2 {
     margin: .5em;
     border-bottom: 1px solid #0000003f;
 }
-
-/* Item */
-.date {
-    display: inline;
-    font-size: .9em;
-    font-style: italic;
+#Relevant-Experience__title {
+    margin-top: -.2em !important;
 }
-#left > .date {
-    transform: translate(0,10%);
-    position: absolute;
-    left: 3%;
-}
-#left > h2 {
-    margin: 2% 0 1% 28%;
-    text-indent: -3%;
+#Projects__title
+{ margin-top: -.5em !important; }
 
+/* Object */
+.object {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    margin-bottom: .6em;
+}
+.object__text {
+    /* border: 1px solid green; */
+    flex-grow: 1;
+    box-sizing: content-box;
+}
+
+#left h2 {
     font-size: 1.25em;
+    margin: 0;
 }
-#left > ul {
-    margin: .2em 0 .4em 23%;
-    
+#left ul {
     font-size: 1em;
     line-height: 125%;
 
     list-style-type: circle;
+
+    margin: 0;
 }
-#left li {
-    text-indent: -1.5%;
-    margin: .5% 0 .5% 0;
-}
+#left li { }
 
 
 /* Education */
@@ -215,40 +230,37 @@ header > h2 {
     display: inline-block;
     margin: 0 2em .9em 2em;
 }
-.project > .date ,
-.project_skill {
-    position: absolute;
-    font-size: .9em;
-    transform: translate(0, 9%);
-}
-.project_skill {
-    left: 60%;
-    transform: translate(-100%, -94%);
-}
+
 .project {
-    display: block;
-    margin: .35em 3% .35em 4.5%;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+
+    margin-bottom: .4em;
 }
-.project > h1 {
+.project * {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.project .date ,
+.project__skill {
+    font-size: .9em;
+}
+.project h1 {
     display: inline;
-    position: relative;
-
-    padding: 0;
-    margin-left: 7.5em;
     font-size: 1em;
-}
 
+    flex-grow: 1;
+}
+.project__skill {
+    margin-right: 1.2em;
+}
 
 /*----------------------------------------------------------------------------*/
 
 /***********/
 /*  Right  */
 /***********/
-
-#right {
-    --empty : url("media/empty.svg");
-    --filled : url("media/filled.svg");
-}
 
 #right {
     width: calc( var(--width) - var(--split) );
@@ -261,7 +273,7 @@ header > h2 {
 /* Section */
 #right > h1 {
     font-size: 2.1em;
-    margin: 1.1em 0 .5em .5em;
+    margin: .7em .5em .5em .5em;
     text-align: center;
 
     border-bottom: 1px solid #0000002a;
@@ -270,7 +282,7 @@ header > h2 {
 /* Object */
 #right > h2 {
     font-size: 1.5em;
-    margin: .5em;
+    margin: 0 .5em;
 }
 
 /* Contact */
@@ -290,7 +302,7 @@ header > h2 {
 /* Skills */
 div[class^='skill_'] {
     position: relative;
-    margin: 3% 0 3% 2em;
+    margin: .6em 0 .6em 2em;
 }
 
 div[class^='skill_'] > div[class^='score_'] {
