@@ -267,7 +267,7 @@ header > h2 {
 
     background-color: #eaeaee;
     background-image: linear-gradient(to bottom right, #e3e1e4, #eaeaee, #e3e1e4);
-    font-size: calc( .018 * var(--width) );
+    font-size: calc( .0176 * var(--width) );
 }
 
 /* Section */
