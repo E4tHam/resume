@@ -35,7 +35,7 @@ body {
 
     box-shadow: 2px 2px 8px #00000066;
     transition: box-shadow .3s;
-    
+
 }
 #_MAIN_:hover {
     transition: box-shadow .3s;
@@ -122,7 +122,7 @@ header > h2 {
     transform: translate(0,-50%);
     right: 3%;
     top: 50%;
-    
+
     border-radius: 100%;
     box-shadow:
         calc(-.001*var(--width))
@@ -160,7 +160,7 @@ header > h2 {
 }
 .date {
     display: inline;
-    
+
     font-size: .9em;
     font-style: italic;
     text-align: center;
@@ -172,14 +172,12 @@ header > h2 {
 /* Section */
 #left > h1 {
     font-size: 1.6em;
-    margin: .5em;
+    margin: 1em .7em .7em .7em;
     border-bottom: 1px solid #0000003f;
 }
 #Relevant-Experience__title {
     margin-top: -.2em !important;
 }
-#Projects__title
-{ margin-top: -.5em !important; }
 
 /* Object */
 .object {
@@ -321,26 +319,26 @@ div[class^='skill_'] > div[class^='score_'] {
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
-div[class^='skill_'] > .score_1 { right: 7.25em; }
-div[class^='skill_'] > .score_2 { right: 6.00em; }
-div[class^='skill_'] > .score_3 { right: 4.75em; }
-div[class^='skill_'] > .score_4 { right: 3.50em; }
-div[class^='skill_'] > .score_5 { right: 2.25em; }
+
+div[class^='skill_'] > .score_1 { right: 5.75em; }
+div[class^='skill_'] > .score_2 { right: 4.50em; }
+div[class^='skill_'] > .score_3 { right: 3.25em; }
 
 .skill_1 > .score_5 ,
-.skill_2 > .score_5 ,
-.skill_3 > .score_5 ,
-.skill_4 > .score_5 ,
-
 .skill_1 > .score_4 ,
-.skill_2 > .score_4 ,
-.skill_3 > .score_4 ,
-
 .skill_1 > .score_3 ,
+.skill_1 > .score_2 ,
+
+.skill_2 > .score_5 ,
+.skill_2 > .score_4 ,
 .skill_2 > .score_3 ,
 
-.skill_1 > .score_2 ,
-.skill_2 > .score_2 { background-image: url("media/empty.svg") !important; }
+.skill_3 > .score_5 ,
+.skill_3 > .score_4 ,
+
+.skill_4 > .score_5
+
+{ background-image: url("media/empty.svg") !important; }
 
 
 /*----------------------------------------------------------------------------*/
