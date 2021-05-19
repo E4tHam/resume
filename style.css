@@ -83,7 +83,7 @@ header {
     background-image: linear-gradient(to top right, #dad5e6, #a5979e);
     white-space: nowrap;
 
-    font-size: calc( .03 * var(--width) );
+    font-size: calc( .015 * var(--width) );
 
     box-shadow:
         0
@@ -95,9 +95,13 @@ header {
 
 header > h1 {
     margin: 0;
-    padding: 2.5% 1% .5% 1%;
 
-    font-size: 2em;
+    position: absolute;
+    top: 40%;
+    left: .25em;
+    transform: translate(0,-50%);
+
+    font-size: 4em;
     font-weight: 600;
     text-shadow:
         calc(.003*var(--width))
@@ -108,9 +112,12 @@ header > h1 {
 }
 header > h2 {
     margin: 0;
-    padding: .5% 1% 1% 1%;
 
-    font-size: 1em;
+    position: absolute;
+    bottom: .5em;
+    left: .5em;
+
+    font-size: 2em;
     font-weight: 500;
     text-shadow: 0 0 0 black ;
 }
@@ -131,6 +138,14 @@ header > h2 {
         #0000004f             ;
 }
 
+header > #objective {
+    position: absolute;
+
+    bottom: 1em;
+
+    right: 1em;
+    text-align: left;
+}
 
 /*----------------------------------------------------------------------------*/
 
